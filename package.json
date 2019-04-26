@@ -5,12 +5,12 @@
   "main": "_forma.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hsnaydd/buttono.git"
+    "url": "https://github.com/ihsanofluoglu/forma"
   },
   "bugs": {
-    "url": "https://github.com/hsnaydd/buttono/issues"
+    "url": "https://github.com/ihsanofluoglu/forma/issues"
   },
-  "homepage": "https://github.com/hsnaydd/buttono#readme",
+  "homepage": "https://github.com/ihsanofluoglu/forma#readme",
   "keywords": [
     "button",
     "mixin",
