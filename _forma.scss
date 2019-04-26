@@ -68,12 +68,10 @@ $forma-form-focus-border-color: #000 !default;
   $forma-disabled-opacity: $forma-form-disabled-opacity,
   $forma-border-color: $forma-form-border-color,
   $forma-border-width: $forma-form-border-width,
-  $forma-border-radius: $forma-form-border-radius,
   $forma-focus-border-color: $forma-form-focus-border-color
 ) {
   background-color: $forma-background-color;
   border-color: $forma-border-color;
-  border-radius: $forma-border-radius;
   border-width: $forma-border-width;
   color: $forma-form-color;
 

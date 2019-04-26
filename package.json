@@ -1,7 +1,7 @@
 {
   "name": "forma",
   "description": "A flexible Sass mixin for creating BEM-style form elements.",
-  "version": "0.5.1",
+  "version": "0.0.1",
   "main": "_forma.scss",
   "repository": {
     "type": "git",
