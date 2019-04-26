@@ -11,13 +11,13 @@ TODO
 ### Using npm
 
 ```sh
-$ npm install forma --save
+$ npm i @ihsan.ofluoglu/form-a --save
 ```
 
 ### Using Yarn
 
 ```sh
-$ yarn add forma
+$ yarn add @ihsan.ofluoglu/form-a
 ```
 
 
