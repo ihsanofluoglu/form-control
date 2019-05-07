@@ -1,4 +1,4 @@
-'use strict';
+'use scrict';
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -8,25 +8,27 @@ const browserSync = require('browser-sync');
 
 const reload = browserSync.reload;
 
-const browserSyncConfigs = {
+const browserSyncConfig = {
   notify: false,
   // Disable open automatically when Browsersync starts.
-  open: false,
+  open: true,
   server: ['./'],
   port: 3000,
 };
 
-gulp.task('styles', () => {
+gulp.task('style:demo', () => {
   return gulp
-    .src('demo/src/**/*.scss')
+    .src('./demo/src/**/*.scss')
     .pipe(sass({ precision: 10 }).on('error', sass.logError))
     .pipe(postcss([autoprefixer({ cascade: false })]))
-    .pipe(gulp.dest('demo/dist'));
+    .pipe(gulp.dest('./demo/dist/asset/css'));
 });
 
-gulp.task('build', ['styles']);
+gulp.task('build', ['style:demo']);
 
 gulp.task('serve', ['build'], () => {
-  browserSync(browserSyncConfigs);
-  gulp.watch(['demo/src/**/*.scss'], ['styles', reload]);
+  browserSync(browserSyncConfig);
+
+  gulp.watch(['./src/**/*.scss'], ['style:demo', reload]);
+  gulp.watch(['./demo/src/**/*.scss'], ['style:demo', reload]);
 });

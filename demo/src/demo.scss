@@ -1,0 +1,36 @@
+@import '../../src/form-control';
+
+$form-control-background: $color-primary;
+$form-control-focus-background: $color-primary;
+$form-control-disable-background: $color-primary;
+$form-control-font-family: sans-serif;
+$form-control-font-size: 14px;
+$form-control-font-weight: 400;
+$form-control-line-height: 25px;
+$form-control-letter-spacing: 1px;
+$form-control-padding: 8px 12px;
+$form-control-opacity: 1;
+$form-control-border-width: 2px;
+$form-control-border-style: solid;
+$form-control-border-color: $color-black;
+$form-control-outline-width: 0;
+$form-control-outline-style: solid;
+$form-control-outline-color: $color-black;
+$form-control-base-height: 40px;
+$form-control-placeholder-color: $color-black;
+$form-control-color: $color-black;
+$form-control-display: block;
+
+// COLOR
+$color-red: #ce361f;
+
+.c-form-control {
+  @include form-control-block();
+  @include form-control-block-modifier();
+
+  &--alert {
+    @include form-control-block-modifier(
+      $border-color: $color-red
+    );
+  }
+}

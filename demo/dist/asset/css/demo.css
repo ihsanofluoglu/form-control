@@ -1,0 +1,46 @@
+.c-form-control {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding: 8px 12px;
+  width: 100%;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  opacity: 1;
+  outline-color: #000;
+  outline-style: solid;
+  outline-width: 0; }
+  .c-form-control::-webkit-input-placeholder {
+    color: #000; }
+  .c-form-control::-moz-placeholder {
+    color: #000; }
+  .c-form-control:-ms-input-placeholder {
+    color: #000; }
+  .c-form-control::-ms-input-placeholder {
+    color: #000; }
+  .c-form-control::placeholder {
+    color: #000; }
+  .c-form-control:focus {
+    background-color: #fff; }
+  .c-form-control:disabled {
+    background-color: #fff; }
+  .c-form-control--alert {
+    border-color: #ce361f;
+    border-style: solid;
+    border-width: 2px;
+    opacity: 1;
+    outline-color: #000;
+    outline-style: solid;
+    outline-width: 0; }
+    .c-form-control--alert:focus {
+      background-color: #fff; }
+    .c-form-control--alert:disabled {
+      background-color: #fff; }

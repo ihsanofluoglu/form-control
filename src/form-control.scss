@@ -1,0 +1,108 @@
+// EXAMPLE COLORS
+$color-primary: #fff;
+$color-black: #000;
+
+// VARIABLES
+$form-control-background: $color-primary;
+$form-control-focus-background: $color-primary;
+$form-control-disable-background: $color-primary;
+$form-control-font-family: sans-serif;
+$form-control-font-size: 14px;
+$form-control-font-weight: 400;
+$form-control-line-height: 25px;
+$form-control-letter-spacing: 1px;
+$form-control-padding: 8px 12px;
+$form-control-opacity: 1;
+$form-control-border-width: 2px;
+$form-control-border-style: solid;
+$form-control-border-color: $color-black;
+$form-control-outline-width: 0;
+$form-control-outline-style: solid;
+$form-control-outline-color: $color-black;
+$form-control-base-height: 40px;
+$form-control-placeholder-color: $color-black;
+$form-control-color: $color-black;
+$form-control-display: block;
+$form-control-border-radius: 4px;
+
+@mixin form-control-block(
+  $background: $form-control-background,
+  $font-family: $form-control-font-family,
+  $font-size: $form-control-font-size,
+  $font-weight: $form-control-font-weight,
+  $line-height: $form-control-line-height,
+  $letter-spacing: $form-control-letter-spacing,
+  $padding: $form-control-padding,
+  $height: $form-control-base-height,
+  $placeholder-color: $form-control-placeholder-color,
+  $color: $form-control-color,
+  $display: $form-control-display,
+  $border-radius: $form-control-border-radius
+) {
+  background-color: $background;
+  border-radius: $border-radius;
+  color: $color;
+  display: $display;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  height: $height;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+  padding: $padding;
+  width: 100%;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}
+
+@mixin form-control-block-modifier(
+  $background: null,
+  $background-focus: $form-control-focus-background,
+  $background-disable: $form-control-disable-background,
+  $opacity: $form-control-opacity,
+  $border-width: $form-control-border-width,
+  $border-style: $form-control-border-style,
+  $border-color: $form-control-border-color,
+  $outline-width: $form-control-outline-width,
+  $outline-style: $form-control-outline-style,
+  $outline-color: $form-control-outline-color,
+  $placeholder-color: null,
+  $color: null,
+  $disable-opacity: null
+) {
+  @if ($background) {
+    background-color: $background;
+  }
+
+  @if ($background) {
+    color: $color;
+  }
+
+  border-color: $border-color;
+  border-style: $border-style;
+  border-width: $border-width;
+  opacity: $opacity;
+  outline-color: $outline-color;
+  outline-style: $outline-style;
+  outline-width: $outline-width;
+
+  &:focus {
+    background-color: $background-focus;
+  }
+
+  &:disabled {
+    background-color: $background-disable;
+
+    @if ($disable-opacity) {
+      opacity: $disable-opacity;
+    }
+  }
+
+  @if ($placeholder-color) {
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+}
