@@ -11,13 +11,13 @@ TODO
 ### Using npm
 
 ```sh
-$ npm install form-control --save
+$ npm install see-form-control --save
 ```
 
 ### Using Yarn
 
 ```sh
-$ yarn add form-control
+$ yarn add see-form-control
 ```
 
 ## Usage
