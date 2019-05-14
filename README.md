@@ -154,10 +154,6 @@ $form-control-font-weight: 16px !default;
 // Number
 $form-control-line-height: (24 / 16) !default;
 
-// Default Letter Spacing.
-// Number
-$form-control-letter-spacing: (1) !default;
-
 // Default Base Height.
 // Number
 $form-control-base-height: 40px !default;
