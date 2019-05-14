@@ -3,26 +3,26 @@ $color-primary: #fff;
 $color-black: #000;
 
 // VARIABLES
-$form-control-background: $color-primary;
-$form-control-focus-background: $color-primary;
-$form-control-disable-background: $color-primary;
-$form-control-font-family: sans-serif;
-$form-control-font-size: 14px;
-$form-control-font-weight: 400;
-$form-control-line-height: 25px;
-$form-control-padding: 8px 12px;
-$form-control-opacity: 1;
-$form-control-border-width: 2px;
-$form-control-border-style: solid;
-$form-control-border-color: $color-black;
-$form-control-outline-width: 0;
-$form-control-outline-style: solid;
-$form-control-outline-color: $color-black;
-$form-control-base-height: 40px;
-$form-control-placeholder-color: $color-black;
-$form-control-color: $color-black;
-$form-control-display: block;
-$form-control-border-radius: 4px;
+$form-control-background: $color-primary !default;
+$form-control-focus-background: $color-primary !default;
+$form-control-disable-background: $color-primary !default;
+$form-control-font-family: sans-serif !default;
+$form-control-font-size: 16px !default;
+$form-control-font-weight: 400 !default;
+$form-control-line-height: 24px !default;
+$form-control-padding: 8px 12px !default;
+$form-control-opacity: 1 !default;
+$form-control-border-width: 2px !default;
+$form-control-border-style: solid !default;
+$form-control-border-color: $color-black !default;
+$form-control-outline-width: 0 !default;
+$form-control-outline-style: solid !default;
+$form-control-outline-color: $color-black !default;
+$form-control-base-height: 40px !default;
+$form-control-placeholder-color: $color-black !default;
+$form-control-color: $color-black !default;
+$form-control-display: block !default;
+$form-control-border-radius: 4px !default;
 
 @mixin form-control-block(
   $background: $form-control-background,
